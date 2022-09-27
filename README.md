@@ -13,3 +13,6 @@ It also have a **responsive design** that will adapt itself to the size of the w
  ![preview](https://kevincastejon.github.io/Unity-TimeScaleWindow/Assets/KevinCastejon/TimeScaleWindow/Documentation/Tuto1.png)
  ![preview](https://kevincastejon.github.io/Unity-TimeScaleWindow/Assets/KevinCastejon/TimeScaleWindow/Documentation/Tuto2.png)
  ![preview](https://kevincastejon.github.io/Unity-TimeScaleWindow/Assets/KevinCastejon/TimeScaleWindow/Documentation/Tuto3.png)
+
+
+[Lent icônes créées par srip - Flaticon](https://www.flaticon.com/fr/icones-gratuites/lent)
