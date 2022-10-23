@@ -1,10 +1,10 @@
 {
-    "name": "TimeScaleWindowAssembly",
+    "name": "TimeScaleWindowEditorAssembly",
     "rootNamespace": "",
-    "references": [
-        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    "references": [],
+    "includePlatforms": [
+        "Editor"
     ],
-    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
