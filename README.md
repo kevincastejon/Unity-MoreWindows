@@ -12,7 +12,7 @@ Provides a **Slider** clamped between **0** and **10**, along with several prese
 
 It also have a **responsive design** that will adapt itself to the size of the **window**, **tab** or **canvas element** size.
 
-Also provides a **RuntimeTimeScaler** component that owns a **SetTimeScale(float** *value***)** public method, bindable to **UnityEvents**, that helps implementing your custom interface for controlling the **TimeScale**, if you need to.
+Also provides a **RuntimeTimeScaler** component that owns a **SetTimeScale(float ***value***)** public method, bindable to **UnityEvents**, that helps implementing your custom interface for controlling the **TimeScale**, if you need to.
 
 [Get the Unity package](https://github.com/kevincastejon/Unity-TimeScaleWindow/releases/latest)
 
