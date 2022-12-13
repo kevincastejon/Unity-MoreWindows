@@ -14,7 +14,11 @@ It also have a **responsive design** that will adapt itself to the size of the *
 
 Also provides a **RuntimeTimeScaler** component that owns a **SetTimeScale(float ***value***)** public method, bindable to **UnityEvents**, that helps implementing your custom interface for controlling the **TimeScale**, if you need to.
 
+[See online documentation](https://kevincastejon.github.io/Unity-TimeScaleWindow/)
+
 [Get the Unity package](https://github.com/kevincastejon/Unity-TimeScaleWindow/releases/latest)
+
+[See my other Unity packages](https://assetstore.unity.com/publishers/46935)
 
  ![preview](https://kevincastejon.github.io/Unity-TimeScaleWindow/Assets/KevinCastejon/TimeScaleWindow/Documentation/Cover.png)
  ![Tuto1](https://kevincastejon.github.io/Unity-TimeScaleWindow/Assets/KevinCastejon/TimeScaleWindow/Documentation/Tuto1.png)
