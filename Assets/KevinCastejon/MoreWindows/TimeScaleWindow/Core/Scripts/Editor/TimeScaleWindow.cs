@@ -35,7 +35,7 @@ namespace KevinCastejon.MoreWindows
         internal static void OpenWindow()
         {
             EditorWindow window = GetWindow(typeof(TimeScaleWindow));
-            window.titleContent = new GUIContent("TimeScale Window");
+            window.titleContent = new GUIContent("TimeScale");
         }
         private void OnEnable()
         {

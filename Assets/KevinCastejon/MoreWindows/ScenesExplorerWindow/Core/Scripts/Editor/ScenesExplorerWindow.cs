@@ -14,7 +14,7 @@ namespace KevinCastejon.MoreWindows
         internal static void OpenWindow()
         {
             EditorWindow window = GetWindow(typeof(ScenesExplorerWindow));
-            window.titleContent = new GUIContent("Scenes Explorer Window");
+            window.titleContent = new GUIContent("Scenes Explorer");
         }
         private void OnGUI()
         {
