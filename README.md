@@ -4,10 +4,10 @@ Provides several windows that exposes faster some settings and assets into the E
 
 Windows list:
 
-- TimeScale Window (exposes the TimeScale setting)
-- Physics Window (exposes the main physics settings)
-- Scenes Explorer Window (exposes the scenes assets)
-- Quick Assets Window (exposes an custom assets list)
+- **TimeScale Window** (exposes the TimeScale setting)
+- **Physics Window** (exposes the main physics settings)
+- **Scenes Explorer Window** (exposes the scenes assets)
+- **Quick Assets Window** (exposes an custom assets list)
 
 [See online documentation](https://kevincastejon.github.io/Unity-MoreWindows/)
 
