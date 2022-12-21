@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f806421b74ad53469d263f01b38cd7d, type: 3}
   m_Name: QuickAssets
   m_EditorClassIdentifier: 
-  _quickAssets: []
+  _quickAssets:
+  - {fileID: 0}

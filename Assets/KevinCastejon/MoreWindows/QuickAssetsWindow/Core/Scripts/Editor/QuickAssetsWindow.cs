@@ -13,6 +13,7 @@ namespace KevinCastejon.MoreWindows
         private SerializedObject _so;
         private SerializedProperty _assets;
         private ReorderableList _list;
+        private float _size = 50f;
         [MenuItem("Window/QuickAssets Window", false, 222)]
         internal static void OpenWindow()
         {
@@ -24,24 +25,41 @@ namespace KevinCastejon.MoreWindows
             string[] paths = AssetDatabase.FindAssets("t:QuickAssetsSo").Select(x => AssetDatabase.GUIDToAssetPath(x)).ToArray();
             _so = new SerializedObject(AssetDatabase.LoadAssetAtPath<Object>(paths[0]));
             _assets = _so.FindProperty("_quickAssets");
+            InitList();
+        }
+
+        private void InitList()
+        {
             _list = new ReorderableList(_so, _assets, true, false, true, true);
-            _list.elementHeight = 50f;
+            _list.elementHeightCallback = ElementHeightCallback;
             _list.onAddCallback = OnAddCallback;
             _list.drawElementCallback = DrawElementCallback;
         }
+
+        private float ElementHeightCallback(int index)
+        {
+            return _size;
+        }
+
         private void OnGUI()
         {
             _so.Update();
+            EditorGUI.BeginChangeCheck();
+            _size = GUI.HorizontalSlider(EditorGUILayout.GetControlRect(), _size, 16f, 50f);
+            if (EditorGUI.EndChangeCheck())
+            {
+                InitList();
+            }
             _list.DoLayoutList();
             _so.ApplyModifiedProperties();
         }
         private void DrawElementCallback(Rect rect, int index, bool isActive, bool isFocused)
         {
-            EditorGUI.PropertyField(new Rect(rect.x, rect.y, rect.width-52f, rect.height), _assets.GetArrayElementAtIndex(index), GUIContent.none);
+            EditorGUI.PropertyField(new Rect(rect.x, rect.y, rect.width - (_size + 2f), rect.height), _assets.GetArrayElementAtIndex(index), GUIContent.none);
             EditorGUI.BeginDisabledGroup(_assets.GetArrayElementAtIndex(index).objectReferenceValue == null);
             GUIContent label = EditorGUIUtility.IconContent("d_SearchJump Icon");
             label.tooltip = "Open without selection";
-            if (GUI.Button(new Rect(rect.x + (rect.width - 50f), rect.y, 50f, rect.height), label))
+            if (GUI.Button(new Rect(rect.x + (rect.width - _size), rect.y, _size, rect.height), label))
             {
                 AssetDatabase.OpenAsset(_assets.GetArrayElementAtIndex(index).objectReferenceValue);
             }
