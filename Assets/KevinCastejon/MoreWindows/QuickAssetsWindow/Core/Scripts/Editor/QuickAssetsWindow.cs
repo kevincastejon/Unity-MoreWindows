@@ -17,7 +17,7 @@ namespace KevinCastejon.MoreWindows
         internal static void OpenWindow()
         {
             EditorWindow window = GetWindow(typeof(QuickAssetsWindow));
-            window.titleContent = new GUIContent("QuickAssets");
+            window.titleContent = new GUIContent("Quick Assets");
         }
         private void OnEnable()
         {
