@@ -12,7 +12,7 @@ namespace KevinCastejon.MoreWindows
         private bool _additive;
         private bool _forceSave;
         private float _size = 50f;
-        List<SceneAsset> _scenes;
+        List<SceneAsset> _scenes; 
         string[] _paths;
         [MenuItem("Window/Scenes Explorer Window", false, 222)]
         internal static void OpenWindow()
